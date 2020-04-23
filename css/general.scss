@@ -18,9 +18,24 @@ $background-color: rgb(22, 22, 22);
 $secondary-color: #909090;
 
 *{
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.red{
+    color: red;
+}
+
+.white{
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 @mixin icon($principal, $secondary){
@@ -67,7 +82,7 @@ $secondary-color: #909090;
     }
 }
 body{
-    
+    overflow-x: hidden !important;
     background-color: $background-color;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     color: white;

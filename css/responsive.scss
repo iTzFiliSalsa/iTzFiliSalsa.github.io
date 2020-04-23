@@ -1,0 +1,25 @@
+@media(max-width: 767px){
+    .fm-nav-img{
+        flex-basis: 40% !important;
+    }
+    .fm-nav-list{
+        flex-basis: 60% !important;
+    }
+    .fm-nav{
+        display: none !important;
+    }
+
+    .fm-nav-mobile{
+        display: block;
+    }
+
+}
+
+@media (max-width: 575px){
+    .fm-h3{
+        margin-top: 20px;
+    }
+    .fm-logos{
+        width: 50%;
+    }
+}

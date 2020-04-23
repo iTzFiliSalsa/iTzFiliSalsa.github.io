@@ -11,9 +11,24 @@
   src: url("../fonts/coolvetica rg.ttf");
 }
 * {
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .btn {
@@ -51,6 +66,7 @@
 }
 
 body {
+  overflow-x: hidden !important;
   background-color: #161616;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   color: white;
@@ -76,6 +92,56 @@ body {
 }
 .fm-principal-text p {
   color: #909090;
+}
+
+aside {
+  display: none;
+  z-index: 2;
+  transition: left 0.5s ease;
+  position: fixed;
+  left: -200px;
+  width: 200px;
+  height: 100vh;
+  background: linear-gradient(360deg, #3d0000, #161616);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+aside::after {
+  content: "";
+  z-index: -1;
+  background-color: #161616;
+  box-shadow: 0px 0px 20px #3d0000;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 767px;
+  height: 45px;
+}
+aside ul li {
+  height: 50px;
+}
+aside ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  padding: 13px;
+}
+aside ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+aside ul li:hover {
+  background: #3d0000;
+}
+aside .black {
+  color: red;
+  position: absolute;
+  top: 8px;
+  right: -285px;
+}
+aside .black img {
+  margin-left: 10px;
+  width: 80px;
 }
 
 .fm-welcome {
@@ -152,8 +218,10 @@ body {
   text-decoration: none;
   color: white;
 }
-
-.active::before {
+.fm-nav .active {
+  position: relative;
+}
+.fm-nav .active::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -207,7 +275,7 @@ body {
   color: #909090;
 }
 .fm-languages .fm-logos {
-  padding: 40px;
+  padding: 20px;
 }
 .fm-languages .fm-logos .fm-item-logos {
   filter: grayscale(50);
@@ -442,6 +510,33 @@ footer textarea {
   color: white;
   border: none !important;
   background-color: #161616 !important;
+}
+
+@media (max-width: 767px) {
+  .fm-nav-img {
+    flex-basis: 40% !important;
+  }
+
+  .fm-nav-list {
+    flex-basis: 60% !important;
+  }
+
+  .fm-nav {
+    display: none !important;
+  }
+
+  .fm-nav-mobile {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .fm-h3 {
+    margin-top: 20px;
+  }
+
+  .fm-logos {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
