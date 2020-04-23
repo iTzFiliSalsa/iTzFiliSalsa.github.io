@@ -1,0 +1,53 @@
+footer{
+    background: linear-gradient(to right, rgb(61, 0, 0), rgb(0, 0, 0));
+
+
+    .hr{
+        height: 1px;
+        background-color: red;
+    }
+    h5, .red{
+        color: red !important;
+    }
+
+    p{
+        margin: 0;
+    }
+    .fm-form{
+    }
+
+    .img-footer{
+        max-width: 40%;
+    }
+
+    .fm-socials{
+        font-size: 24px;
+    }
+
+    ul{
+        li{
+            margin-top: 5px;
+            a{
+                text-decoration: none;
+                color: white;
+                transition: all 500ms ease;
+
+                &:hover{
+                    color: #8b8b8b;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea
+    {
+        resize: none;
+        color: white;
+        border: none !important;
+        background-color: rgba(22,22,22,1) !important;
+    }
+}

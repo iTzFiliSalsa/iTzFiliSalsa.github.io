@@ -56,6 +56,28 @@ body {
   color: white;
 }
 
+.integral-font {
+  font-size: 72px;
+  font-family: "coolvetica";
+}
+
+.type {
+  font-size: 60px;
+  color: red;
+}
+
+.fm-principal-text {
+  margin-top: 50px;
+}
+.fm-principal-text h1 {
+  font-family: Montserrat;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.fm-principal-text p {
+  color: #909090;
+}
+
 .fm-welcome {
   position: relative;
 }
@@ -160,28 +182,6 @@ body {
   color: red;
 }
 
-.integral-font {
-  font-size: 72px;
-  font-family: "coolvetica";
-}
-
-.type {
-  font-size: 60px;
-  color: red;
-}
-
-.fm-principal-text {
-  margin-top: 50px;
-}
-.fm-principal-text h1 {
-  font-family: Montserrat;
-  font-size: 50px;
-  letter-spacing: 3px;
-}
-.fm-principal-text p {
-  color: #909090;
-}
-
 .fm-pattern-languages, .fm-pattern-about {
   position: relative;
 }
@@ -261,42 +261,6 @@ body {
 }
 .fm-card p {
   font-size: 12px;
-}
-
-.fm-pattern-about {
-  background: #3d0000;
-  background: linear-gradient(165deg, #3d0000 0%, #161616 50%, #161616 100%);
-}
-.fm-pattern-about .fm-card-about {
-  overflow: hidden;
-  position: relative;
-  width: 80%;
-  height: 100%;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 3em;
-  background: linear-gradient(165deg, #3d0000 0%, #161616 75%);
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
-}
-.fm-pattern-about .fm-card-about #fm-dots-card {
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-  width: 50%;
-  z-index: 1;
-  opacity: 0.1;
-}
-.fm-pattern-about .fm-card-about #fm-profile-card {
-  position: absolute;
-  bottom: 0;
-  left: 40%;
-  width: 80%;
-  z-index: 2;
-  opacity: 0.6;
-}
-.fm-pattern-about h3 {
-  font-family: Roboto-Light;
-  letter-spacing: 7px;
-  font-size: 34px;
 }
 
 .fm-projects {
@@ -401,6 +365,42 @@ body {
 }
 .fm-projects .project .info-icon:hover {
   color: white;
+}
+
+.fm-pattern-about {
+  background: #3d0000;
+  background: linear-gradient(165deg, #3d0000 0%, #161616 50%, #161616 100%);
+}
+.fm-pattern-about .fm-card-about {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 3em;
+  background: linear-gradient(165deg, #3d0000 0%, #161616 75%);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+.fm-pattern-about .fm-card-about #fm-dots-card {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 50%;
+  z-index: 1;
+  opacity: 0.1;
+}
+.fm-pattern-about .fm-card-about #fm-profile-card {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 80%;
+  z-index: 2;
+  opacity: 0.6;
+}
+.fm-pattern-about h3 {
+  font-family: Roboto-Light;
+  letter-spacing: 7px;
+  font-size: 34px;
 }
 
 footer {

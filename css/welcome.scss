@@ -1,0 +1,117 @@
+.fm-welcome{
+    position: relative;
+    &::before{
+        z-index: -1;
+        content: '';
+        background: linear-gradient(rgb(61, 0, 0), rgb(0, 0, 0));
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+#fm-img-btn{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#fm-img-left{
+    width: 100px;
+    left: 0;
+    top: 35%;
+    z-index: -1;
+    position: absolute;
+}
+
+
+#fm-img-right{
+    width: 100px;
+    right: 0;
+    top: 20%;
+    z-index: -1;
+    position: absolute;
+}
+
+.fm-nav{
+    padding-top: 20px;
+
+    .fm-nav-img{
+        flex-basis: 50%;
+
+        img{
+            cursor: pointer;
+            max-width: 150px;
+        }
+    }
+    .fm-nav-list{
+        flex-basis: 50%;
+        list-style: none;
+    }
+
+    .fm-nav-item{
+        margin: 4px 10px;
+        padding: 5px;
+        position: relative;
+        transition: all 300ms;
+
+        
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            transform: translate(-50%, -50%);
+            height: 2px;
+            transition: all 300ms;
+            background-color: red;
+        }
+
+        &:hover::before{
+            left: 50%;
+            width: 50%;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.active{
+    &::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        height: 2px;
+        transition: all 300ms;
+        background-color: red;
+    }
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .fm-presentation{
+        font-size: 30px;
+        color: white;
+        transition: color 300ms ease;
+
+        &:hover{
+            color: rgb(255, 0, 0);
+        }
+    }
+}
