@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
@@ -15,24 +16,34 @@
 </head>
 
 <body>
+    <div class="aside-square">
+        <div class="f d-flex align-items-center justify-content-center white"><a href="#prin" id="home-uno">F</a></div>
+        <div class="home d-flex align-items-center justify-content-center"><a href="#about" id="about-uno"><i class="fas fa-home white"></i></a> </div>
+        <div class="about d-flex align-items-center justify-content-center"><a href="#projects" id="projects-uno"><i class="fas fa-laptop-code white"></i></a></div>
+        <div class="projects d-flex align-items-center justify-content-center"><a href="#contact" id="contact-uno"><i class="fas fa-phone white"></i></a></div>
+    </div>
+    <div class="fm-float toTop">
+        <i class="fas fa-long-arrow-alt-up interior"></i>
+    </div>
     <aside class="fm-nav-mobile">
         <ul>
-            <li><a href=""><i class="fas fa-home mr-3 red"></i>Inicio</a></li>
-            <li><a href=""><i class="fas fa-user mr-3 red"></i>Conoceme</a></li>
-            <li><a href=""><i class="fas fa-laptop-code mr-3 red"></i>Proyectos</a></li>
-            <li><a href=""><i class="fas fa-phone mr-3 red"></i>Contacto</a></li>
+            <li class="fm-active" id="home-tres"><a href="#prin"><i class="fas fa-home mr-3 red"></i>Inicio</a></li>
+            <li id="about-tres"><a href="#about"><i class="fas fa-user mr-3 red"></i>Conoceme</a></li>
+            <li id="projects-tres"><a href="#projects"><i class="fas fa-laptop-code mr-3 red"></i>Proyectos</a></li>
+            <li id="contact-tres"><a href="#contact"><i class="fas fa-phone mr-3 red"></i>Contacto</a></li>
         </ul>
         <div class="black">
-            <i class="fas fa-bars"></i>
+            <span id="open"><i class="fas fa-bars" ></i></span>
+
             <img src="img/logo.png" alt="">
-                <i class="fas fa-home mx-3 white"></i>
-                <i class="fas fa-user mr-3 white"></i>
-                <i class="fas fa-laptop-code mr-3 white"></i>
-                <i class="fas fa-phone mr-3 white"></i>
+                <span class="" id="home-dos"><i class="fas fa-home mx-3"></i></span>
+                <span class="white" id="about-dos"><i class="fas fa-user mr-3"></i></span>
+                <span class="white" id="projects-dos"><i class="fas fa-laptop-code mr-3"></i></span>
+                <span class="white" id="phone-dos"><i class="fas fa-phone mr-3"></i></span>
         </div>
         
     </aside>
-    <section class="container-fluid p-0 m-0 min-vh-100 fm-welcome position-relative">
+    <section class="container-fluid p-0 m-0 min-vh-100 fm-welcome position-relative" id="prin">
         <img id="fm-img-btn" id="layer" data-depth="0.2" src="img/SVG/Recurso 6.svg" alt="">
         <img id="fm-img-left" id="layer" data-depth="0.2" src="img/SVG/Recurso 3.svg" alt="">
             <img id="fm-img-right" id="layer" data-depth="0.2" src="img/SVG/Recurso 5.svg" alt="">
@@ -44,9 +55,9 @@
                 <img src="img/logo.png" alt="FMODZ">
             </div>
             <ul class="fm-nav-list d-flex justify-content-end">
-                <li class="fm-nav-item active"><a href="#">Inicio</a></li>
-                <li class="fm-nav-item"><a href="#">Conoceme</a></li>
-                <li class="fm-nav-item"><a href="#">Proyectos</a></li>
+                <li class="fm-nav-item active"><a href="#home">Inicio</a></li>
+                <li class="fm-nav-item"><a href="#about">Conoceme</a></li>
+                <li class="fm-nav-item"><a href="#projects">Proyectos</a></li>
             </ul>
         </nav>
         <!-- <div id="scene" class="scenes">
@@ -69,7 +80,7 @@
         </div>
         
     </section>
-    <section class="container-fluid min-vh-100 fm-pattern-languages d-flex align-items-center justify-content-center">
+    <section class="container-fluid min-vh-100 fm-pattern-languages d-flex align-items-center justify-content-center" id="about">
         <img id="fm-dots-left" src="img/dots.svg" alt="">
         <img id="fm-dots-right" src="img/dots.svg" alt="">
         <section class="container fm-languages">
@@ -160,9 +171,9 @@
             </div>
     </section> -->
 
-    <section class="container-fluid fm-projects min-vh-100">
-        <div class="container">
-            <div class="mt-5 d-flex flex-column justify-content-center">
+    <section class="container-fluid fm-projects min-vh-100" id="projects">
+        <div class="container pt-5">
+            <div class="d-flex flex-column justify-content-center">
                 <h3 class="fm-h3">Mis Proyectos</h3>
             </div>
 
@@ -298,7 +309,7 @@
             </div>
         </div>
     </section>
-    <footer class="container-fluid pt-5 px-5 mt-5  fm-footer">
+    <footer class="container-fluid pt-5 px-5 mt-5  fm-footer" id="contact">
             <div class="row m-5">
                 <div class="col-xs-12 col-sm-6 col-md-3 mt-4 mt-md-0">
                     <img src="img/logo.png" class="img-footer mb-5" alt="">
@@ -372,14 +383,104 @@
             
     </footer>
     
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    
+        <script>
+            var prin = $("#prin").offset().top;
+            var about = $("#about").offset().top;
+            var projects = $("#projects").offset().top;
+            var contact = $("#contact").offset().top;
+
+
+            function toggle(){
+                var array = ["#about-uno","#home-uno","#projects-uno", "#contact-uno"];
+                var mobile = ["#home-dos","#about-dos","#projects-dos", "#phone-dos"];
+                var mobiles = ["#home-tres","#about-tres","#projects-tres", "#contact-tres"];
+
+                $.each(array, (index, value) => {
+                    $(value).removeClass("red-responsive");
+                });
+
+                $("#home-uno").removeClass("red");
+
+                $.each(mobiles, (index, value) => {
+                    $(value).removeClass("fm-active");
+                });
+
+                $.each(mobile, (index, value) => {
+                    $(value).addClass("white");
+                });
+            }
+
+            $.fn.isInViewport = function() {
+                var elementTop = $(this).offset().top;
+                var elementBottom = elementTop + $(this).outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+                return elementBottom > viewportTop && elementTop < viewportBottom;
+            };
+
+            $(".toTop").on("click", function(){
+                $("html, body").animate({scrollTop: 0}, 100);
+            });
+
+            $("#open").click(function(){
+                $(".fm-nav-mobile").toggleClass("left");
+            });
+
+            $(window).scroll(function() {
+
+                if($("#about").isInViewport() || $("#projects").isInViewport() || $("#contact").isInViewport()){
+                    $(".aside-square").css("left", "0px");
+                }else{
+                    $(".aside-square").css("left", "-50px");
+                }
+
+               
+
+               
+
+            //    if($(this).scrollTop() < about){
+            //         toggle();
+            //         $("#home-uno").addClass("red-responsive");
+            //         $("#home-tres").addClass("fm-active");
+            //         $("#home-dos").removeClass("white");
+            //     }
+
+                if($(this).scrollTop() >= prin && $(this).scrollTop() <= about){
+                    toggle();
+                    $("#home-uno").addClass("red");
+                    $("#home-tres").addClass("fm-active");
+                    $("#home-dos").removeClass("white");
+                }
+
+                if($(this).scrollTop() >= about && $(this).scrollTop() <= projects){
+                    toggle();
+                    $("#about-uno").addClass("red-responsive");
+                    $("#about-tres").addClass("fm-active");
+                    $("#about-dos").removeClass("white");
+                }
+
+                if($(this).scrollTop() >= projects && $(this).scrollTop() <= contact){
+                    toggle();
+                    $("#projects-uno").addClass("red-responsive");
+                    $("#projects-dos").removeClass("white");
+                    $("#projects-tres").addClass("fm-active");
+                }
+
+                if($("#contact").isInViewport()){
+                    toggle();
+                    $("#contact-uno").addClass("red-responsive");
+                    $("#phone-dos").removeClass("white");
+                    $("#contact-tres").addClass("fm-active");
+                }
+
+
+            });
+        </script>
         <script src="js/typed.js"></script>
     <script>
         var typed = new Typed('.type', {
@@ -391,15 +492,10 @@
             backSpeed: 60,
             loop: true
         });
-        
-    </script>
-    <script>
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
+
         var scenet = document.getElementById('sceneTwo');
         var parallaxx = new Parallax(scenet);
-        var scenett = document.getElementById('sceneThree');
-        var parallaxxx = new Parallax(scenett);  
+        
     </script>
 </body>
 

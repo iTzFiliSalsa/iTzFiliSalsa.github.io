@@ -22,6 +22,22 @@ $secondary-color: #909090;
     padding: 0;
 }
 
+body{
+    overflow-x: hidden !important;
+    width: 100%;
+}
+a{
+    color: white;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 ul{
     list-style-type: none;
 }
@@ -110,3 +126,63 @@ body{
     }
 }
 
+.fm-float{
+    z-index: 999;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(61,0,0);
+    transition: box-shadow 300ms ease;
+    cursor: pointer;
+    bottom: 60px;
+    right: 60px;
+
+    &:hover{
+        box-shadow: 0px 0px 20px rgb(61, 0, 0);
+    }
+
+    .interior{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.aside-square{
+    z-index: 999;
+    position: fixed;
+    transition: left 500ms ease;
+    left: -50px;
+    top: 50%;
+    transform: translate(0,-50%);
+
+    & > *{
+        cursor: pointer;
+        position: relative;
+        background-color: black;
+        transition: all 500ms ease;
+        width: 50px;
+        height: 50px;
+        &:hover{
+            box-shadow: 0px 0px 20px rgb(61,0,0);
+            transform: scale(1.5);
+
+            & > * {
+                color: red;
+            }
+        }
+    }
+
+    // .f{
+    //     position: relative;
+    //     right: 50px;
+    // }
+
+    .red-responsive{
+        & > * {
+            color: red;
+        }
+    }
+}

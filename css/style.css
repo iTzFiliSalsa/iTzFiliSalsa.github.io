@@ -15,6 +15,22 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style-type: none;
 }
@@ -94,9 +110,59 @@ body {
   color: #909090;
 }
 
+.fm-float {
+  z-index: 999;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #3d0000;
+  transition: box-shadow 300ms ease;
+  cursor: pointer;
+  bottom: 60px;
+  right: 60px;
+}
+.fm-float:hover {
+  box-shadow: 0px 0px 20px #3d0000;
+}
+.fm-float .interior {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aside-square {
+  z-index: 999;
+  position: fixed;
+  transition: left 500ms ease;
+  left: -50px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.aside-square > * {
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+  transition: all 500ms ease;
+  width: 50px;
+  height: 50px;
+}
+.aside-square > *:hover {
+  box-shadow: 0px 0px 20px #3d0000;
+  transform: scale(1.5);
+}
+.aside-square > *:hover > * {
+  color: red;
+}
+.aside-square .red-responsive > * {
+  color: red;
+}
+
 aside {
+  top: 0;
   display: none;
-  z-index: 2;
+  z-index: 5;
   transition: left 0.5s ease;
   position: fixed;
   left: -200px;
@@ -115,6 +181,9 @@ aside::after {
   left: 200px;
   width: 767px;
   height: 45px;
+}
+aside .fm-active {
+  background: #3d0000;
 }
 aside ul li {
   height: 50px;
@@ -142,6 +211,10 @@ aside .black {
 aside .black img {
   margin-left: 10px;
   width: 80px;
+}
+
+.left {
+  left: 0px;
 }
 
 .fm-welcome {
@@ -263,7 +336,7 @@ aside .black img {
 .fm-pattern-languages #fm-dots-right, .fm-pattern-about #fm-dots-right {
   position: absolute;
   top: 5%;
-  left: 95%;
+  right: 0px;
   width: 10%;
   opacity: 0.2;
 }
@@ -521,7 +594,7 @@ footer textarea {
     flex-basis: 60% !important;
   }
 
-  .fm-nav {
+  .fm-nav, .aside-square {
     display: none !important;
   }
 
