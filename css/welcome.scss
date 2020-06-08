@@ -1,6 +1,7 @@
 aside{
+    top: 0;
     display: none;
-    z-index: 2;
+    z-index: 5;
     transition: left .5s ease;
     position: fixed;
     left: -200px;
@@ -19,6 +20,10 @@ aside{
         left: 200px;
         width: 767px;
         height: 45px;
+    }
+
+    .fm-active{
+        background: rgb(61, 0, 0);
     }
 
     ul{
@@ -52,6 +57,10 @@ aside{
             width: 80px;
         }
     }
+}
+
+.left{
+    left: 0px;
 }
 .fm-welcome{
     position: relative;

@@ -1,7 +1,6 @@
 footer{
     background: linear-gradient(to right, rgb(61, 0, 0), rgb(0, 0, 0));
 
-
     .hr{
         height: 1px;
         background-color: red;
@@ -49,5 +48,14 @@ footer{
         color: white;
         border: none !important;
         background-color: rgba(22,22,22,1) !important;
+    }
+
+    .fm-social{
+
+        transition: color 500ms ease;
+        
+        &:hover{
+            color: #8b8b8b;
+        }
     }
 }

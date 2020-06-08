@@ -13,7 +13,7 @@
     #fm-dots-right{
         position: absolute;
         top: 5%;
-        left: 95%;
+        right: 0px;
         width: 10%;
         opacity: .2;
     }
@@ -83,12 +83,36 @@
         width: 80%;
     }
 
-    h2{
+    .mostrar{
+        transition: all 500ms ease;
+        
+    }
+
+    &:hover .mostrar{
+        display: block;
+    }
+
+    .line{
+        background-color: rgba(22,22,22,1);
+        height: 2px;
+    }
+
+    .icons{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    h4{
         font-family: Roboto-Light;
         color: white;
     }
 
     p{
         font-size: 12px;
+    }
+
+    .sub{
+        font-size: 16px;
+        color: red; 
     }
 }
