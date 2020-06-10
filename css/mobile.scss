@@ -1,0 +1,315 @@
+.center-mini-logos{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img{
+        width: 100px;
+        filter: brightness(100);
+    }
+}
+
+.to-zoom{
+    transition: transform 500ms ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.title-app{
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.to-white{
+    filter: brightness(100);
+}
+
+.color-orange{
+    color: #FF6600;
+}
+
+.background-orange{
+    background: #FF6600;
+}
+
+.color-ibeni{
+    color: #007d8f;
+}
+
+.background-ibeni{
+    background: #007d8f;
+}
+
+.color-green{
+    color: #c6e089;
+}
+
+.background-green{
+    background: #c6e089;
+}
+
+.color-watermelon{
+    color: #fe345c;
+}
+
+.background-watermelon{
+    background: #fe345c;
+}
+
+.banner{
+    
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .banner-text{
+        
+        user-select: none;
+        z-index: 999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .full{
+            background-color: black;
+            
+            padding: 10px;
+            width: 100%;
+        }
+        h1{
+            font-family: Montserrat !important;
+            font-weight: bold;
+            letter-spacing: 3px;
+            font-size: 5vh;
+            margin-bottom: 5px;
+            position: relative;
+            
+            // &::before{
+            //     content: 'MÁNDAME';
+            //     transition: width 500ms ease;
+            //     position: absolute;
+            //     width: 0;
+            //     left: 0;
+            //     top: 0;
+            //     overflow: hidden;
+            //     color: #eaeaea;
+            // }
+
+            &:hover::before{
+                width: 100%;
+            }
+        }
+
+        a{
+            transition: box-shadow 500ms ease;
+            margin-top: 20px;
+            text-decoration: none;
+            box-sizing: border-box;
+            border: none;
+            color: white;
+            width: 200px;
+            border-radius: 2em;
+            padding: 10px 20px;
+
+            &:hover{
+                color: white;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            }
+       }
+    }
+
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    video, img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+.expand-full{
+        
+    position: sticky;
+    top: 0;
+    height: 80px;
+    z-index: 3;
+
+    .expand-logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55px;
+    }
+}
+
+.expand-full-icons{
+
+    position: relative;
+    height: 80px;
+    z-index: 3;
+
+    .expand-logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55px;
+    }
+
+    .gray{
+        filter:  brightness(0%);
+    }
+}
+
+.description-app{
+    position: relative;
+
+    
+
+    .fm-dots-left, .fm-dots-right{
+        opacity: .05;
+        z-index: -2;
+        position: absolute;
+        width: 35%;
+    }
+
+    .fm-dots-right{
+        bottom: 0;
+        right: 0%;
+    }
+
+    .mockup{
+        z-index: 2;
+        width: 50%;
+    }
+
+    .circle{
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: -100px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+    .mockup-phone{
+        width: 70%;
+        transition: transform 500ms ease;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    
+
+    .desc-app{
+        p{
+            font-size: 18px;
+            font-size: 100%;
+            text-align: left;
+        }
+    }
+}
+
+%mockup{
+    height: 40vh;
+    
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mockup-app{
+    background-image: url('../img/mandamemockup.jpg');
+    @extend %mockup;
+}
+
+.mockup-app-ecociudad{
+    background-image: url('../img/ecociudadmockup.jpg');
+    @extend %mockup;
+}
+
+.mockup-app-ibeni-second{
+    background-image: url('../img/ibeni/websitemockup.jpg');
+    @extend %mockup;
+}
+
+.mockup-app-ibeni{
+    background-image: url('../img/ibeni/iBeni.jpg');
+    @extend %mockup;
+}
+
+.mockup-app-second{
+    position: relative;
+    background-image: url('../img/mandamemockup2.jpg');
+    @extend %mockup;
+
+    .mockup-download{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.description-app-third{
+    background-color: #121212;
+
+    .fm-dots-left, .fm-dots-right{
+        opacity: .05;
+        z-index: 1;
+        position: absolute;
+        width: 35%;
+    }
+    
+    .fm-dots-right{
+        bottom: 0;
+        right: 0%;
+    }
+    
+}
+
+.list-feature{
+
+    li{
+        text-align: right;
+        font-size: 18px;
+        margin: 20px 0;
+
+        &::before{
+            content: '- ';
+            color: #FF6600;
+        }
+    }
+    
+}
+
+.sidephone{
+    width: 60%;
+}
+
+.download{
+    width: 80%;
+}
+
+@media (max-width: 768px){
+    .title-app{
+            text-align: center !important;
+ 
+    }
+}
