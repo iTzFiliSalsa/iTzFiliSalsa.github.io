@@ -324,6 +324,15 @@ aside .black img {
   color: red;
 }
 
+.fm-presentation {
+  font-size: 30px;
+  color: white;
+  transition: color 300ms ease;
+}
+.fm-presentation:hover {
+  color: red;
+}
+
 .center-main {
   width: 100%;
   position: absolute;

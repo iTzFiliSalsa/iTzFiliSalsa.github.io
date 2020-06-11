@@ -179,6 +179,16 @@ aside{
     }
 }
 
+.fm-presentation{
+    font-size: 30px;
+    color: white;
+    transition: color 300ms ease;
+
+    &:hover{
+        color: rgb(255, 0, 0);
+    }
+}
+
 .center-main{
     width: 100%;
     position: absolute;
