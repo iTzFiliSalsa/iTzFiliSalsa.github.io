@@ -324,6 +324,14 @@ aside .black img {
   color: red;
 }
 
+.center-main {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .fm-pattern-languages, .fm-pattern-about {
   position: relative;
 }
