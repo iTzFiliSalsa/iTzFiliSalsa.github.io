@@ -219,6 +219,8 @@ aside .black img {
 }
 
 .fm-welcome {
+  overflow: hidden;
+  height: 100vh;
   position: relative;
 }
 .fm-welcome::before {
@@ -254,6 +256,7 @@ aside .black img {
 }
 
 .fm-nav {
+  height: 80px;
   padding-top: 20px;
 }
 .fm-nav .fm-nav-img {
@@ -307,6 +310,45 @@ aside .black img {
   background-color: red;
 }
 
+.mexicanada {
+  position: relative;
+  height: 100%;
+}
+
+.mexicanada-2 {
+  position: relative;
+  height: calc(100% - 80px);
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.img-profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-profile > * {
+  width: 100%;
+}
+
+.fm-myphoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.respeta {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .center {
   position: absolute;
   top: 50%;
@@ -331,6 +373,13 @@ aside .black img {
 }
 .fm-presentation:hover {
   color: red;
+}
+
+.integral-font {
+  font-size: 6vh;
+}
+.integral-font > * {
+  font-size: 6vh;
 }
 
 .center-main {
@@ -722,6 +771,14 @@ footer .fm-social:hover {
   background: #007d8f;
 }
 
+.color-chambee {
+  color: #0091c2;
+}
+
+.background-chambee {
+  background: #0091c2;
+}
+
 .color-green {
   color: #c6e089;
 }
@@ -866,7 +923,7 @@ footer .fm-social:hover {
   text-align: left;
 }
 
-.mockup-app-second, .mockup-app-ibeni, .mockup-app-ibeni-second, .mockup-app-ecociudad, .mockup-app {
+.mockup-app-second, .mockup-app-hbuild, .mockup-app-ibeni, .mockup-app-ibeni-second, .mockup-app-chambee, .mockup-app-ecociudad, .mockup-app {
   height: 40vh;
   background-position: center;
   background-size: cover;
@@ -881,12 +938,20 @@ footer .fm-social:hover {
   background-image: url("../img/ecociudadmockup.jpg");
 }
 
+.mockup-app-chambee {
+  background-image: url("../img/chambee/mockupchambee.jpg");
+}
+
 .mockup-app-ibeni-second {
   background-image: url("../img/ibeni/websitemockup.jpg");
 }
 
 .mockup-app-ibeni {
   background-image: url("../img/ibeni/iBeni.jpg");
+}
+
+.mockup-app-hbuild {
+  background-image: url("../img/hbuild/mockuphbuild.jpg");
 }
 
 .mockup-app-second {

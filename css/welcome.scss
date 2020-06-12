@@ -63,6 +63,8 @@ aside{
     left: 0px;
 }
 .fm-welcome{
+    overflow: hidden;
+    height: 100vh;
     position: relative;
     &::before{
         z-index: -1;
@@ -71,7 +73,6 @@ aside{
         position: absolute;
         width: 100%;
         height: 100%;
-
     }
 }
 
@@ -81,6 +82,8 @@ aside{
     width: 100%;
     bottom: 0;
 }
+
+
 
 #fm-img-left{
     width: 100px;
@@ -100,6 +103,7 @@ aside{
 }
 
 .fm-nav{
+    height: 80px;
     padding-top: 20px;
 
     .fm-nav-img{
@@ -158,6 +162,47 @@ aside{
     }
 }
 
+.mexicanada{
+    position: relative;
+    height: 100%;
+}
+
+.mexicanada-2{
+    position: relative;
+    height: calc(100% - 80px);
+}
+
+.pos-relative{
+    position: relative;
+    
+}
+
+.img-profile{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    & > * {
+        width: 100%;
+    }
+}
+
+
+.fm-myphoto{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.respeta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 
 
 .center{
@@ -189,10 +234,18 @@ aside{
     }
 }
 
+.integral-font{
+    font-size: 6vh;
+
+    & > * {
+        font-size: 6vh;
+    }
+}
+
 .center-main{
     width: 100%;
     position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }

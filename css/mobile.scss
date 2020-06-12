@@ -43,6 +43,14 @@
     background: #007d8f;
 }
 
+.color-chambee{
+    color: #0091c2;
+}
+
+.background-chambee{
+    background: #0091c2;
+}
+
 .color-green{
     color: #c6e089;
 }
@@ -244,6 +252,11 @@
     @extend %mockup;
 }
 
+.mockup-app-chambee{
+    background-image: url('../img/chambee/mockupchambee.jpg');
+    @extend %mockup;
+}
+
 .mockup-app-ibeni-second{
     background-image: url('../img/ibeni/websitemockup.jpg');
     @extend %mockup;
@@ -251,6 +264,11 @@
 
 .mockup-app-ibeni{
     background-image: url('../img/ibeni/iBeni.jpg');
+    @extend %mockup;
+}
+
+.mockup-app-hbuild{
+    background-image: url('../img/hbuild/mockuphbuild.jpg');
     @extend %mockup;
 }
 
